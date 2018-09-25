@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const INPUT_FILE = 'flights.csv';
-const WORKING_FILE = 'pending-flights.csv';
+const WORKING_FILE = './pending-flights.csv';
 
 if (!fs.existsSync(INPUT_FILE)) {
   // Write input file if not exists
@@ -43,7 +43,7 @@ function readFileNoComments(filename) {
 
 function readFile(filename) {
   return new Promise(function(resolve, reject) {
-    fs.readFile(filename, funtion(err, data) {
+    fs.readFile(filename, function(err, data) {
       if (err) {
         reject(err);
       } else {

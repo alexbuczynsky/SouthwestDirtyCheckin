@@ -4,8 +4,14 @@
   "main": "index.js",
   "author": "skinner927",
   "license": "MIT",
+  "scripts": {
+    "example": "node auto-run.js -c NIQRIX -f Alex -l Johnson -d 2018-09-24T09:35:00"
+  },
   "dependencies": {
+    "moment-timezone": "^0.5.21",
     "nightmare": "^2.9.0",
+    "node-schedule": "^1.3.0",
+    "nodemailer": "^4.6.8",
     "optimist": "^0.6.1"
   }
 }
